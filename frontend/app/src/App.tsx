@@ -1,10 +1,11 @@
 import React from 'react';
+import './assets/css/';
 
 
 export default function App() {
   return (
     <div>
-      <a>Hello</a>
+      Kyrgyzstan!
     </div>
   );
 }
