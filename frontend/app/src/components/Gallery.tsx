@@ -1,37 +1,11 @@
 import React from "react";
 
 
-export default function AboutSection() {
+export default function Gallery() {
     return (
-        <section className="h-screen w-full bg-gray-200">
-            <div className="p-20 text-balance">
-                <div className="flex flex-wrap justify-evenly">
-                    <div>
-                        <h4 className="text-3xl pb-3 text-green-500 font-semibold">Цель проекта</h4>
-                        <div className="w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
-                            <span className="text-base">
-                                Проект был создан с целью показать разнообразие, красоту и многогранность культуры Кыргызстана. Наш проект — это платформа для тех, кто хочет узнать больше о Кыргызстане, поделиться своими впечатлениями или даже задуматься о путешествии в эту страну.
-                            </span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 className="text-3xl pb-3 text-green-500 font-semibold">О проекте</h4>
-                        <div className="w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
-                            <span className="text-base">
-                            Наш проект — это не просто блог, а уникальная платформа, созданная для всех, кто интересуется Кыргызстаном. Мы собрали здесь информацию о культуре, природе,  и достопримечательностях страны, чтобы каждый мог найти вдохновение для путешествия 
-                            </span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 className="text-3xl pb-3 text-green-500 font-semibold">Туризм и путешествия</h4>
-                        <div className="w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
-                            <span className="text-base">
-                                 Проект объединяет путешественников, экспертов, студентов и местных жителей, чтобы делиться не только фактами, но и личными историями. В нашем блоге вы найдете полезные советы, актуальные маршруты, а также вдохновляющие рассказы
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div className="flex flex-wrap items-center justify-evenly mt-14 relative">
+        <div className="min-h-screen w-full">
+            <div className="w-full h-full p-20">
+                <div className="flex flex-wrap items-center justify-evenly mt-14 relative max-h-[420px] overflow-x-hidden">
                     <div className="h-96 w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
                         <img src="https://img.championat.com/s/732x488/news/big/x/s/top-5-mest-v-kyrgyzstane_17093705481584921772.jpg" className="h-full w-full object-cover object-center" />
                     </div>
@@ -62,7 +36,15 @@ export default function AboutSection() {
                         </svg>
                     </div>
                 </div>
+
+                <div className="w-full mt-20" style={{ display: 'grid', columnGap: '1em', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))'}}>
+                    {Array.from(new Array(18)).map((_, index) => (
+                        <div key={index} className="h-[320px] w-[240px] bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
+                            <img src="https://exploretraveloasis.com/wp-content/uploads/2023/02/Kel-Suu-Lake-4.jpeg" className="h-full w-full object-cover object-center" />
+                        </div>
+                    ))}
+                </div>
             </div>
-        </section>
-    );
+        </div>
+    )
 }
