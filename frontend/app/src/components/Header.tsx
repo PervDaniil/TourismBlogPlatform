@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Header() {
     return (
-        <header className="sticky top-0 w-full py-5 flex items-center justify-evenly bg-gray-200 bg-opacity-90 z-50">
+        <header className="sticky top-0 w-full py-5 flex items-center justify-evenly bg-white bg-opacity-90 z-50">
             <h5 className="font-bold text-2xl text-green-500">Кыргызстан Туризм</h5>
             <nav className="flex gap-10 text-gray-500">
                 <a href="">Главная</a>
