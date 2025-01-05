@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="sticky top-0 w-full py-5 flex items-center justify-evenly bg-white bg-opacity-90 z-50">
             <h5 className="font-bold text-2xl text-black" style={{ fontFamily: 'Nexa' }}>Kg Tourism</h5>
-            <nav className="flex gap-10 text-gray-500">
+            <nav className="flex flex-nowrap gap-10 text-gray-500 overflow-y-hidden text-nowrap">
                 <a href="">Главная</a>
                 <a href="">О Кыргызстане</a>
                 <a href="">Галерея</a>
