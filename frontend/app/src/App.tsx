@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/css/root.css';
-import HomePage from './pages/HomePage/HomePage.tsx';
+import HomePage from './pages/HomePage.tsx';
 
 
 export default function App() {
