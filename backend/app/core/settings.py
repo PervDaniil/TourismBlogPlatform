@@ -10,7 +10,7 @@ ALLOWED_HOSTS = []
 
 
 APPS = [
-
+    'api.blog',
 ]
 
 
