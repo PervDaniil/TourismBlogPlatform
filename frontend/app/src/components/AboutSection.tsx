@@ -3,48 +3,48 @@ import React from "react";
 
 export default function AboutSection() {
     return (
-        <section className="h-screen w-full bg-gray-200">
-            <div className="p-20 text-balance">
-                <div className="flex flex-wrap justify-evenly">
+        <section className="h-auto lg:h-screen w-full bg-gray-200">
+            <div className="p-10 lg:p-20 text-balance">
+                <div className="flex flex-wrap flex-col gap-y-10 lg:flex-row justify-evenly">
                     <div>
                         <h4 className="text-3xl pb-3 text-green-500 font-semibold">Цель проекта</h4>
-                        <div className="w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
-                            <span className="text-base">
+                        <div className="w-[100%] lg:w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
+                            <span className="text-xs lg:text-base">
                                 Проект был создан с целью показать разнообразие, красоту и многогранность культуры Кыргызстана. Наш проект — это платформа для тех, кто хочет узнать больше о Кыргызстане, поделиться своими впечатлениями или даже задуматься о путешествии в эту страну.
                             </span>
                         </div>
                     </div>
                     <div>
                         <h4 className="text-3xl pb-3 text-green-500 font-semibold">О проекте</h4>
-                        <div className="w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
-                            <span className="text-base">
+                        <div className="w-[100%] lg:w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
+                            <span className="text-xs lg:text-base">
                             Наш проект — это не просто блог, а уникальная платформа, созданная для всех, кто интересуется Кыргызстаном. Мы собрали здесь информацию о культуре, природе,  и достопримечательностях страны, чтобы каждый мог найти вдохновение для путешествия 
                             </span>
                         </div>
                     </div>
                     <div>
                         <h4 className="text-3xl pb-3 text-green-500 font-semibold">Туризм и путешествия</h4>
-                        <div className="w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
-                            <span className="text-base">
+                        <div className="w-[100%] lg:w-[400px] border-l-2 border-green-500 pl-5 ml-1 text-gray-800">
+                            <span className="text-xs lg:text-base ">
                                  Проект объединяет путешественников, экспертов, студентов и местных жителей, чтобы делиться не только фактами, но и личными историями. В нашем блоге вы найдете полезные советы, актуальные маршруты, а также вдохновляющие рассказы
                             </span>
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-wrap items-center justify-evenly mt-14 relative">
-                    <div className="h-96 w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
+                <div className="flex flex-col lg:flex-row flex-wrap items-center justify-evenly mt-14 relative">
+                    <div className="h-80 w-64 lg:h-96 lg:w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
                         <img src="https://img.championat.com/s/732x488/news/big/x/s/top-5-mest-v-kyrgyzstane_17093705481584921772.jpg" className="h-full w-full object-cover object-center" />
                     </div>
-                    <div className="h-96 w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
+                    <div className="h-80 w-64 lg:h-96 lg:w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
                         <img src="https://globalsiasar.org/sites/default/files/styles/hd/public/photos/extra/burana-tower.jpg?itok=khm5DOWn" className="h-full w-full object-cover object-center" />
                     </div>
-                    <div className="h-96 w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
+                    <div className="h-80 w-64 lg:h-96 lg:w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
                         <img src="https://lh5.googleusercontent.com/p/AF1QipOUcaFv7SMrtA4mrq2-lAkLR-gf57XdA2GgFmXw=w675-h390-n-k-no" className="h-full w-full object-cover object-center" />
                     </div>
-                    <div className="h-96 w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
+                    <div className="h-80 w-64 lg:h-96 lg:w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
                         <img src="https://triptokyrgyzstan.com/sites/default/files/styles/card_wide/public/images/2019-04/slide-1960x857-07.jpg.webp?itok=ftaEbZ1D" className="h-full w-full object-cover object-center" />
                     </div>
-                    <div className="h-96 w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
+                    <div className="h-80 w-64 lg:h-96 lg:w-72 bg-green-500 mt-5 rounded-md shadow-lg overflow-hidden">
                         <img src="https://pegassales.kz/userfiles/upload/country/kyrgyzstan/kyrgyzstan_1.jpg" className="h-full w-full object-cover object-center" />
                     </div>
 
