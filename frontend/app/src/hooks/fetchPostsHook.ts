@@ -19,7 +19,7 @@ export function useFetchPosts(): useFetchPostsResult {
 
 
     const fetchData = async () => {
-        const response = await fetch('/api/v1/blog/posts/');
+        const response = await fetch('http://localhost/api/v1/blog/posts/');
 
         if (response.ok) {
             const data = await response.json();
