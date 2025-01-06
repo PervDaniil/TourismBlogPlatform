@@ -6,9 +6,9 @@ import Gallery from "../components/Gallery.tsx";
 
 export default function BlogPage() {
     return (
-        <div className="bg-black">
+        <div className="bg-white">
             <Header />
-            <div className="bg-white">
+            <div className="bg-gray-200">
                 <Gallery />
                 <Footer />
             </div>
