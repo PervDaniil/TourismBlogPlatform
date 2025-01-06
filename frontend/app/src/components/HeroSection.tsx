@@ -14,8 +14,8 @@ export default function HeroSection() {
                         </div>
                     </div>
                     <div className="space-x-10">
-                        <button className="bg-green-500 rounded-md py-3 px-6 my-10 text-white">Подробнее</button>
-                        <button className="bg-green-500 rounded-md py-3 px-6 my-10 text-white">Начать</button>
+                        <button className="bg-green-500 rounded-md py-3 px-6 my-10 text-white hover:bg-green-600">Подробнее</button>
+                        <button className="bg-green-500 rounded-md py-3 px-6 my-10 text-white hover:bg-green-600">Начать</button>
                     </div>
                 </div>
             </div>
