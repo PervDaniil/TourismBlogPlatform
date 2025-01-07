@@ -4,10 +4,10 @@ services:
   db:
     image: mongo
     restart: always
-    volumes:
-      - "mongodb:/database"
     ports:
       - "27017:27017"
+    volumes:
+      - "mongo_data:/data/db"
 
   backend:
     build: ./backend/app/
@@ -47,4 +47,4 @@ services:
 
 
 volumes:
-  mongodb:
+  mongo_data:
