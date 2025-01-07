@@ -5,7 +5,7 @@ services:
     image: mongo
     restart: always
     volumes:
-      - "mongodb:/db/data"
+      - "mongodb:/database"
     ports:
       - "27017:27017"
 
@@ -16,6 +16,7 @@ services:
     ports:
       - "8000:8000"
     depends_on:
+      - redis
       - db
 
   frontend:
@@ -26,6 +27,12 @@ services:
       - "3000:3000"
     depends_on:
       - backend
+
+  redis:
+    image: redis
+    restart: always
+    ports:
+      - "6379:6379"
 
   nginx:
     image: nginx
