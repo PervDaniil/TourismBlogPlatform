@@ -18,6 +18,7 @@ APPS = [
 
 DJANGO_DEPENDENCIES = [
     'corsheaders',
+    'django_redis',
     'rest_framework',
 ]
 
@@ -84,6 +85,17 @@ DATABASES = {
         'NAME': 'mongodb',
         'CLIENT' : {
             'host' : 'mongodb://db:27017/'
+        }
+    }
+}
+
+
+CACHES = {
+    'default' : {
+        'BACKEND' : 'django_redis.cache.RedisCache',
+        'LOCATION' : 'redis://redis:6379/1',
+        'OPTIONS' : {
+            'CLIENT_CLASS' : 'django_redis.client.DefaultClient',
         }
     }
 }
